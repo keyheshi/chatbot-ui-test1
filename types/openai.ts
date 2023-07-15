@@ -18,13 +18,8 @@ export enum OpenAIModelID {
   GPT_3_5_POE = 'gpt-3.5-turbo-poe',
   GPT_4_POE = 'gpt-4-poe',
   CLAUDE_INSTANT = 'claude-instant',
-  CLAUDE_PLUS = 'claude+',
+  CLAUDE_2_100K = 'claude-2-100k',
   CLAUDE_INSTANT_100K = 'claude-instant-100k',
-  TEST_GPT_3_5_POE = 'test-gpt-3.5-turbo-poe',
-  TEST_GPT_4_POE = 'test-gpt-4-poe',
-  TEST_CLAUDE_INSTANT = 'test-claude-instant',
-  TEST_CLAUDE_PLUS = 'test-claude+',
-  TEST_CLAUDE_INSTANT_100K = 'test-claude-instant-100k',
   BARD = 'bard',
 }
 
@@ -89,49 +84,19 @@ export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
   [OpenAIModelID.CLAUDE_INSTANT]: {
     id: OpenAIModelID.CLAUDE_INSTANT,
     name: 'CLAUDE-INSTANT',
-    maxLength: 11000,
+    maxLength: 33000,
     tokenLimit: 11000,
   },
-  [OpenAIModelID.CLAUDE_PLUS]: {
-    id: OpenAIModelID.CLAUDE_PLUS,
-    name: 'CLAUDE+',
-    maxLength: 11000,
-    tokenLimit: 11000,
+  [OpenAIModelID.CLAUDE_2_100K]: {
+    id: OpenAIModelID.CLAUDE_2_100K,
+    name: 'CLAUDE-2-100K',
+    maxLength: 300000,
+    tokenLimit: 100000,
   },
   [OpenAIModelID.CLAUDE_INSTANT_100K]: {
     id: OpenAIModelID.CLAUDE_INSTANT_100K,
     name: 'CLAUDE-INSTANT-100K',
-    maxLength: 100000,
-    tokenLimit: 100000,
-  },
-  [OpenAIModelID.TEST_GPT_3_5_POE]: {
-    id: OpenAIModelID.TEST_GPT_3_5_POE,
-    name: 'TEST-GPT-3.5-TURBO-POE',
-    maxLength: 12000,
-    tokenLimit: 4000,
-  },
-  [OpenAIModelID.TEST_GPT_4_POE]: {
-    id: OpenAIModelID.TEST_GPT_4_POE,
-    name: 'TEST-GPT-4-POE',
-    maxLength: 24000,
-    tokenLimit: 8000,
-  },
-  [OpenAIModelID.TEST_CLAUDE_INSTANT]: {
-    id: OpenAIModelID.TEST_CLAUDE_INSTANT,
-    name: 'TEST-CLAUDE-INSTANT',
-    maxLength: 11000,
-    tokenLimit: 11000,
-  },
-  [OpenAIModelID.TEST_CLAUDE_PLUS]: {
-    id: OpenAIModelID.TEST_CLAUDE_PLUS,
-    name: 'TEST-CLAUDE+',
-    maxLength: 11000,
-    tokenLimit: 11000,
-  },
-  [OpenAIModelID.TEST_CLAUDE_INSTANT_100K]: {
-    id: OpenAIModelID.TEST_CLAUDE_INSTANT_100K,
-    name: 'TEST-CLAUDE-INSTANT-100K',
-    maxLength: 100000,
+    maxLength: 300000,
     tokenLimit: 100000,
   },
   [OpenAIModelID.BARD]: {
