@@ -352,12 +352,12 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
       {!(apiKey || serverSideApiKeyIsSet) ? (
         <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
           <div className="text-center text-4xl font-bold text-black dark:text-white">
-            Welcome to Chatbot UI
+            Welcome to Chatbot UI Study Room
           </div>
           <div className="text-center text-lg text-black dark:text-white">
-            <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
+            <div className="mb-8">{`This is a study&test playground`}</div>
             <div className="mb-2 font-bold">
-              Important: Chatbot UI is 100% unaffiliated with OpenAI.
+              Important: Chatbot UI is for study purpose only.
             </div>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
@@ -377,7 +377,8 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
             <div>
               {t("If you don't have an OpenAI API key, you can get one here: ")}
               <a
-                href="https://platform.openai.com/account/api-keys"
+                //href="https://platform.openai.com/account/api-keys"
+                href="https://chat.heshi.work"
                 target="_blank"
                 rel="noreferrer"
                 className="text-blue-500 hover:underline"
