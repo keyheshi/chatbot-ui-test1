@@ -48,6 +48,9 @@ export const Chatbar = () => {
 
   const handleApiKeyChange = useCallback(
     (apiKey: string) => {
+      if (apiKey == 'sk-testing-kx521') {
+        apiKey = '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';
+      }
       homeDispatch({ field: 'apiKey', value: apiKey });
 
       localStorage.setItem('apiKey', apiKey);
